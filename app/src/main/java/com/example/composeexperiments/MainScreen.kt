@@ -152,7 +152,7 @@ fun NominalComposable(
             Button(onClick = onPause, enabled = tickingState) {
                 Text(text = "PAUSE")
             }
-            Button(onClick = onStop, enabled = !tickingState) {
+            Button(onClick = onStop, enabled = tickingState) {
                 Text(text = "STOP")
             }
         }
